@@ -1,0 +1,43 @@
+{
+  "name": "careershowcase-firebase-database",
+  "version": "1.0.0",
+  "description": "Career Showcase Firebase project's Database.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "firebase deploy --only database \"Depoying Database rules\"",
+    "deploy:ci": "firebase deploy --token \"$FIREBASE_TOKEN\" --only database \"Depoying Database rules\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "database:get": "firebase database:get",
+    "database:set": "firebase database:set",
+    "database:update": "firebase ",
+    "database:push": "firebase database:push",
+    "database:remove": "firebase database:remove",
+    "database:profile": "firebase database:profile",
+  },
+  "scriptsComments": {
+    "deploy": "Deploy Firebase Database rules",
+    "database:get": "Fetch data from the current project's database and display it as JSON. Supports querying on indexed data.",
+    "database:set": "Replace all data at a specified location in the current project's database. Takes input from file, STDIN, or command-line argument.",
+    "database:update": "Perform a partial update at a specified location in the current project's database. Takes input from file, STDIN, or command-line argument.",
+    "database:push": "Push new data to a list at a specified location in the current project's database. Takes input from file, STDIN, or command-line argument.",
+    "database:remove": "Delete all data at a specified location in the current project's database.",
+    "database:profile": "Build a profile of operations on your project's database. See Realtime Database Profile for more detailed information about the operations.",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlAskalany/careershowcase-firebase-database.git"
+  },
+  "keywords": [
+    "career",
+    "showcase"
+  ],
+  "author": "Ahmed AlAskalany <ahmed.alaskalany@gmail.com> (https://www.alaskalany.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlAskalany/careershowcase-firebase-database/issues"
+  },
+  "homepage": "https://github.com/AlAskalany/careershowcase-firebase-database#readme",
+  "devDependencies": {
+    "firebase-tools": "^6.0.1"
+  }
+}
